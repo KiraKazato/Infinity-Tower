@@ -10,7 +10,7 @@ void Component::SetCharacter(Character* _character)
 	mCharacter = _character;
 }
 
-Character Component::GetCharacter() const
+Character*Component::GetCharacter() const
 {
 	return mCharacter;
 }

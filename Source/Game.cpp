@@ -6,7 +6,8 @@ Game::Game()
 
 Game::~Game()
 {
-    DxLib_End();        // ＤＸライブラリ使用の終了処理
+    //ＤＸライブラリ使用の終了処理
+    DxLib_End();       
 }
 
 void Game::Run()
@@ -40,15 +41,14 @@ bool Game::Initialize()
     SetGraphMode(mnWindowWidth, mnWindowHeight,32);
     //実行ログを表示するか
     SetOutApplicationLogValidFlag(TRUE);
- 
-    if (DxLib_Init() == -1)    // ＤＸライブラリ初期化処理
+    //ＤＸライブラリ初期化処理
+    if (DxLib_Init() == -1)
     {
-        return false;    // エラーが起きたら直ちに終了
+        //エラーが起きたら直ちに終了
+        return false;    
     }
-
     //裏画面描画の設定。ちらつきを防止する
     SetDrawScreen(DX_SCREEN_BACK);
-
     //ループするように設定
     mbRunning = true;
 	return true;
@@ -56,13 +56,16 @@ bool Game::Initialize()
 
 void Game::Update()
 {
+    //エスケープキーを押されたとき
     if (CheckHitKey(KEY_INPUT_ESCAPE) != 0)
     {
+        //ゲームループを終了させる
         mbRunning = false;
     }
 }
 
 void Game::Draw()
 {
+    //文字の表示
     DrawString(0, 0, "あああああああああああ", GetColor(255, 255, 255));
 }

@@ -13,7 +13,7 @@ public:
 	//所有するCharacterの登録
 	void SetCharacter(Character* _character);
 	//Component自身は書き換えない。Characterは変更可能。
-	Character GetCharacter()const;
+	Character*GetCharacter()const;
 
 	//キャラクターに追加された瞬間に呼ばれる関数
 	virtual void Init();
