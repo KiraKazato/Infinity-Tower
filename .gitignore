@@ -1,32 +1,81 @@
-# Prerequisites
-*.d
+## Visual Studio C++ 用 .gitignore
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
+# ==========================================
+# 1. ユーザー固有・ソリューション状態
+# ==========================================
+*.suo
+*.user
+*.userosv
+*.sln.docstates
+*.userprefs
+
+# Visual Studio 作業ディレクトリ（IntelliSense・ローカル設定）
+.vs/
+
+# ==========================================
+# 2. C++ IntelliSense / キャッシュ / データベース
+# ==========================================
+ipch/
+*.ipch
+*.sdf
+*.opensdf
+*.opendb
+*.VC.db
+*.VC.opendb
+*.ncb
+*.aps
+
+# ==========================================
+# 3. ビルド出力ディレクトリ（構成・プラットフォーム別）
+# ==========================================
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# ==========================================
+# 4. C++ コンパイル・リンク中間ファイル
+# ==========================================
 *.obj
-
-# Precompiled Headers
-*.gch
+*.ilk
+*.pdb
+*.idb
 *.pch
+*.gch
+*.res
+*.exp
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_i.c
+*_p.c
+*.rep
+*.xdc
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
+# ==========================================
+# 5. 生成されるバイナリ成果物
+# ==========================================
+*.exe
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
 *.lib
 
-# Executables
-*.exe
-*.out
-*.app
+# ==========================================
+# 6. PGO（ガイド付き最適化）/ テスト / 診断
+# ==========================================
+*.pgc
+*.pgd
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.nativecodeanalysis.xml
+*.codeanalysis.xml
+*.dmp
