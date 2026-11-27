@@ -1,21 +1,21 @@
 #include "Component.h"
 
-Component::Component()
+Component::Component():mGameObject(nullptr),mbActived(true)
 {
 
 }
 
-void Component::SetCharacter(Character* _character)
+void Component::SetGameObject(GameObject* _gameObject)
 {
-	mCharacter = _character;
+	mGameObject = _gameObject;
 }
 
-Character*Component::GetCharacter() const
+GameObject*Component::GetGameObject() const
 {
-	return mCharacter;
+	return mGameObject;
 }
 
-void Component::Init()
+void Component::Initialize()
 {
 }
 

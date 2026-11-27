@@ -67,5 +67,5 @@ void Game::Update()
 void Game::Draw()
 {
     //ï∂éöÇÃï\é¶
-    DrawString(0, 0, "Ç†Ç†Ç†Ç†Ç†Ç†Ç†Ç†Ç†Ç†Ç†", GetColor(255, 255, 255));
+    DrawString(0, 0, "ÇÌÇΩÇµÇÃÅ`Ç®ïÊÇÃÅ`Ç‹Ç¶Ç≈Å`", GetColor(255, 255, 255));
 }
