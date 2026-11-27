@@ -137,11 +137,13 @@
   <ItemGroup>
     <ClCompile Include="Source\Components\Component.cpp" />
     <ClCompile Include="Source\Game.cpp" />
+    <ClCompile Include="Source\GameObject\GameObject.cpp" />
     <ClCompile Include="Source\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Components\Component.h" />
     <ClInclude Include="Source\Game.h" />
+    <ClInclude Include="Source\GameObject\GameObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
